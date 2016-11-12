@@ -7,6 +7,7 @@
 //
 
 #import "YRHFriendTrendController.h"
+#import "YRHRecommandViewController.h"
 
 @interface YRHFriendTrendController ()
 
@@ -24,7 +25,8 @@
 
 - (void)btnClick
 {
-    YRHLogFunc;
+    YRHRecommandViewController *vc = [[YRHRecommandViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

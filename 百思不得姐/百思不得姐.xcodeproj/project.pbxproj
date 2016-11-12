@@ -20,6 +20,14 @@
 		91425A741DD6A504005241B3 /* YRHtestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91425A731DD6A504005241B3 /* YRHtestViewController.m */; };
 		91425A771DD6A5F2005241B3 /* YRHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91425A761DD6A5F2005241B3 /* YRHNavigationController.m */; };
 		91425A791DD6A943005241B3 /* YRHFriendTrendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91425A781DD6A943005241B3 /* YRHFriendTrendController.xib */; };
+		91425A7D1DD6B0D1005241B3 /* YRHRecommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91425A7B1DD6B0D1005241B3 /* YRHRecommandViewController.m */; };
+		91425A7E1DD6B0D1005241B3 /* YRHRecommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91425A7C1DD6B0D1005241B3 /* YRHRecommandViewController.xib */; };
+		91425A871DD6C0AE005241B3 /* YRHRecommandCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91425A851DD6C0AE005241B3 /* YRHRecommandCategoryCell.m */; };
+		91425A881DD6C0AE005241B3 /* YRHRecommandCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91425A861DD6C0AE005241B3 /* YRHRecommandCategoryCell.xib */; };
+		91425A8B1DD747CF005241B3 /* YRHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91425A8A1DD747CF005241B3 /* YRHCategory.m */; };
+		91425A8F1DD751DE005241B3 /* YRHUserViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91425A8D1DD751DE005241B3 /* YRHUserViewCell.m */; };
+		91425A901DD751DE005241B3 /* YRHUserViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91425A8E1DD751DE005241B3 /* YRHUserViewCell.xib */; };
+		91425A931DD752C6005241B3 /* YRHUserCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91425A921DD752C6005241B3 /* YRHUserCategory.m */; };
 		91FF6E2D1DD5C55300362E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FF6E2C1DD5C55300362E68 /* Assets.xcassets */; };
 		91FF6E301DD5C55300362E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FF6E2E1DD5C55300362E68 /* LaunchScreen.storyboard */; };
 		C5E8BF564B18EBFB7C349A36 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5441F7FAE98D1142102CA247 /* libPods-百思不得姐.a */; };
@@ -53,6 +61,19 @@
 		91425A751DD6A5F2005241B3 /* YRHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHNavigationController.h; sourceTree = "<group>"; };
 		91425A761DD6A5F2005241B3 /* YRHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHNavigationController.m; sourceTree = "<group>"; };
 		91425A781DD6A943005241B3 /* YRHFriendTrendController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHFriendTrendController.xib; sourceTree = "<group>"; };
+		91425A7A1DD6B0D1005241B3 /* YRHRecommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHRecommandViewController.h; sourceTree = "<group>"; };
+		91425A7B1DD6B0D1005241B3 /* YRHRecommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHRecommandViewController.m; sourceTree = "<group>"; };
+		91425A7C1DD6B0D1005241B3 /* YRHRecommandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHRecommandViewController.xib; sourceTree = "<group>"; };
+		91425A841DD6C0AE005241B3 /* YRHRecommandCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHRecommandCategoryCell.h; sourceTree = "<group>"; };
+		91425A851DD6C0AE005241B3 /* YRHRecommandCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHRecommandCategoryCell.m; sourceTree = "<group>"; };
+		91425A861DD6C0AE005241B3 /* YRHRecommandCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHRecommandCategoryCell.xib; sourceTree = "<group>"; };
+		91425A891DD747CF005241B3 /* YRHCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHCategory.h; sourceTree = "<group>"; };
+		91425A8A1DD747CF005241B3 /* YRHCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHCategory.m; sourceTree = "<group>"; };
+		91425A8C1DD751DE005241B3 /* YRHUserViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHUserViewCell.h; sourceTree = "<group>"; };
+		91425A8D1DD751DE005241B3 /* YRHUserViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHUserViewCell.m; sourceTree = "<group>"; };
+		91425A8E1DD751DE005241B3 /* YRHUserViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHUserViewCell.xib; sourceTree = "<group>"; };
+		91425A911DD752C6005241B3 /* YRHUserCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHUserCategory.h; sourceTree = "<group>"; };
+		91425A921DD752C6005241B3 /* YRHUserCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHUserCategory.m; sourceTree = "<group>"; };
 		91FF6E1D1DD5C55200362E68 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FF6E2C1DD5C55300362E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FF6E2F1DD5C55300362E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,6 +162,9 @@
 				91425A611DD69025005241B3 /* YRHFriendTrendController.h */,
 				91425A621DD69025005241B3 /* YRHFriendTrendController.m */,
 				91425A781DD6A943005241B3 /* YRHFriendTrendController.xib */,
+				91425A7A1DD6B0D1005241B3 /* YRHRecommandViewController.h */,
+				91425A7B1DD6B0D1005241B3 /* YRHRecommandViewController.m */,
+				91425A7C1DD6B0D1005241B3 /* YRHRecommandViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,6 +172,10 @@
 		91425A451DD689A5005241B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91425A891DD747CF005241B3 /* YRHCategory.h */,
+				91425A8A1DD747CF005241B3 /* YRHCategory.m */,
+				91425A911DD752C6005241B3 /* YRHUserCategory.h */,
+				91425A921DD752C6005241B3 /* YRHUserCategory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +183,12 @@
 		91425A461DD689A5005241B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				91425A841DD6C0AE005241B3 /* YRHRecommandCategoryCell.h */,
+				91425A851DD6C0AE005241B3 /* YRHRecommandCategoryCell.m */,
+				91425A861DD6C0AE005241B3 /* YRHRecommandCategoryCell.xib */,
+				91425A8C1DD751DE005241B3 /* YRHUserViewCell.h */,
+				91425A8D1DD751DE005241B3 /* YRHUserViewCell.m */,
+				91425A8E1DD751DE005241B3 /* YRHUserViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,9 +415,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91425A881DD6C0AE005241B3 /* YRHRecommandCategoryCell.xib in Resources */,
 				91425A791DD6A943005241B3 /* YRHFriendTrendController.xib in Resources */,
 				91FF6E301DD5C55300362E68 /* LaunchScreen.storyboard in Resources */,
+				91425A901DD751DE005241B3 /* YRHUserViewCell.xib in Resources */,
 				91FF6E2D1DD5C55300362E68 /* Assets.xcassets in Resources */,
+				91425A7E1DD6B0D1005241B3 /* YRHRecommandViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,17 +479,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91425A871DD6C0AE005241B3 /* YRHRecommandCategoryCell.m in Sources */,
 				91425A6D1DD695B9005241B3 /* UIView+Extension.m in Sources */,
 				91425A741DD6A504005241B3 /* YRHtestViewController.m in Sources */,
 				91425A571DD689A5005241B3 /* main.m in Sources */,
 				91425A601DD69014005241B3 /* YRHNewController.m in Sources */,
 				91425A711DD6A0A2005241B3 /* UIBarButtonItem+YRHBarButtonItem.m in Sources */,
 				91425A5A1DD68A62005241B3 /* YRHTabBarController.m in Sources */,
+				91425A8B1DD747CF005241B3 /* YRHCategory.m in Sources */,
 				91425A631DD69025005241B3 /* YRHFriendTrendController.m in Sources */,
+				91425A8F1DD751DE005241B3 /* YRHUserViewCell.m in Sources */,
 				91425A5D1DD68FFF005241B3 /* YRHEssenceController.m in Sources */,
 				91425A691DD6910C005241B3 /* YRHTabBar.m in Sources */,
 				91425A661DD69035005241B3 /* YRHMeController.m in Sources */,
 				91425A561DD689A5005241B3 /* AppDelegate.m in Sources */,
+				91425A931DD752C6005241B3 /* YRHUserCategory.m in Sources */,
+				91425A7D1DD6B0D1005241B3 /* YRHRecommandViewController.m in Sources */,
 				91425A771DD6A5F2005241B3 /* YRHNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
