@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by 于亚伟 on 2016/11/12.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+YRHBarButtonItem.h"
+
+#ifdef DEBUG
+#define YRHLog(...) NSLog(__VA_ARGS__)
+#else 
+#define YRHLog(...)
+#endif
+
+#define YRHLogFunc YRHLog(@"%s",__func__)
+
+#define YRHRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#endif /* PrefixHeader_pch */
