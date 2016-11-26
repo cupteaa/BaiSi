@@ -7,6 +7,7 @@
 //  自定义tabbar 增加中间的发布按钮
 
 #import "YRHTabBar.h"
+#import "YRHPublishViewController.h"
 
 @interface YRHTabBar()
 
@@ -23,11 +24,18 @@
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [btn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        [btn addTarget:self action:@selector(publishBtnClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
         self.backgroundColor = [UIColor whiteColor];
         self.publishBtn = btn;
     }
     return self;
+}
+
+- (void)publishBtnClick
+{
+    YRHPublishViewController *vc = [[YRHPublishViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:vc animated:YES completion:nil];
 }
 
 // 布局五个按钮

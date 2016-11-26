@@ -35,6 +35,14 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOf-kW-HrQ" customClass="YRHProgressView">
+                    <rect key="frame" x="162.5" y="74.5" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Y7d-4Q-OQ4"/>
+                        <constraint firstAttribute="width" constant="50" id="e9E-EQ-8EY"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -42,6 +50,8 @@
                 <constraint firstAttribute="trailing" secondItem="ReT-bb-61b" secondAttribute="trailing" id="5gM-id-Wvd"/>
                 <constraint firstItem="beJ-He-gFO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CeG-fi-HkR"/>
                 <constraint firstItem="U3p-3O-YEf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JP0-nk-bv3"/>
+                <constraint firstItem="TOf-kW-HrQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="N5j-Kx-RwU"/>
+                <constraint firstItem="TOf-kW-HrQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QQ3-4Q-x6P"/>
                 <constraint firstAttribute="bottom" secondItem="U3p-3O-YEf" secondAttribute="bottom" id="QTd-KL-gCd"/>
                 <constraint firstItem="ReT-bb-61b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c2D-6r-CK0"/>
                 <constraint firstAttribute="trailing" secondItem="U3p-3O-YEf" secondAttribute="trailing" id="m1b-7p-1Po"/>
@@ -53,6 +63,7 @@
             <connections>
                 <outlet property="imageView" destination="ReT-bb-61b" id="vXy-Qq-q5C"/>
                 <outlet property="isGifView" destination="beJ-He-gFO" id="7SX-p7-7b1"/>
+                <outlet property="progressView" destination="TOf-kW-HrQ" id="vdu-qD-BWJ"/>
                 <outlet property="seeFullPictureBtn" destination="U3p-3O-YEf" id="1f1-uh-Wmt"/>
             </connections>
             <point key="canvasLocation" x="31.5" y="12"/>
