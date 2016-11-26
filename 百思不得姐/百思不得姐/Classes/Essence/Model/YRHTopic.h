@@ -39,6 +39,25 @@
 /** 帖子类型 */
 @property (nonatomic,assign) YRHTopicType type;
 
+// 声音相关
+/** 声音背景图片 */
+@property (nonatomic,copy) NSString *bimageuri;
+/** mp3 url */
+@property (nonatomic,copy) NSString *voiceuri;
+/** play count */
+@property (nonatomic,assign) NSInteger playcount;
+/** music length */
+@property (nonatomic,assign) NSInteger voicelength;
+/** music time */
+@property (nonatomic,assign) NSInteger voicetime;
+
+// 视频相关
+/** mp4 url */
+@property (nonatomic,copy) NSString *videouri;
+/** video time */
+@property (nonatomic,assign) NSInteger videotime;
+
+
 // 额外辅助属性
 /** cell height */
 @property (nonatomic,assign, readonly) CGFloat cellHeight;
@@ -48,7 +67,10 @@
 @property (nonatomic,assign, getter=isBigPicure) BOOL bigPicture;
 /** 图片下载进度 */
 @property (nonatomic,assign) CGFloat pictureProgress;
-
+/** 声音图片的尺寸 */
+@property (nonatomic,assign, readonly) CGRect voiceFrame;
+/** 视频图片的尺寸 */
+@property (nonatomic,assign, readonly) CGRect videoFrame;
 
 
 

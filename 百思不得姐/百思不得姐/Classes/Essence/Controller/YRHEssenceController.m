@@ -40,16 +40,6 @@
 
 - (void)setupChildVcs
 {
-    YRHTopicViewController *picture = [[YRHTopicViewController alloc] init];
-    picture.title = @"图片";
-    picture.type = YRHTopicTypePicture;
-    [self addChildViewController:picture];
-    
-    YRHTopicViewController *word = [[YRHTopicViewController alloc] init];
-    word.title = @"段子";
-    word.type = YRHTopicTypeWord;
-    [self addChildViewController:word];
-    
     YRHTopicViewController *all = [[YRHTopicViewController alloc] init];
     all.title = @"全部";
     all.type = YRHTopicTypeAll;
@@ -59,6 +49,16 @@
     video.title = @"视频";
     video.type = YRHTopicTypeVideo;
     [self addChildViewController:video];
+    
+    YRHTopicViewController *picture = [[YRHTopicViewController alloc] init];
+    picture.title = @"图片";
+    picture.type = YRHTopicTypePicture;
+    [self addChildViewController:picture];
+    
+    YRHTopicViewController *word = [[YRHTopicViewController alloc] init];
+    word.title = @"段子";
+    word.type = YRHTopicTypeWord;
+    [self addChildViewController:word];
     
     YRHTopicViewController *voice = [[YRHTopicViewController alloc] init];
     voice.title = @"声音";

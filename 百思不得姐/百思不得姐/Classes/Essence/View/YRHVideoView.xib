@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YRHVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="198"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vB6-7f-5gH">
+                    <rect key="frame" x="0.0" y="0.0" width="351" height="198"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3o-ix-tiz">
+                    <rect key="frame" x="10" y="167" width="31" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Xrl-iJ-49Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbG-fk-rL8">
+                    <rect key="frame" x="310" y="167" width="31" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="GIy-Pr-HtG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8R-Mg-yFj">
+                    <rect key="frame" x="140" y="63.5" width="71" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="E8E-rM-gY3"/>
+                        <constraint firstAttribute="width" constant="71" id="NU0-pK-zh1"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="video-play"/>
+                    <connections>
+                        <action selector="playVedio:" destination="iN0-l3-epB" eventType="touchUpInside" id="dJq-5W-XqB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vB6-7f-5gH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0q9-cF-gLx"/>
+                <constraint firstAttribute="bottom" secondItem="QbG-fk-rL8" secondAttribute="bottom" constant="10" id="3lV-Hb-tvA"/>
+                <constraint firstItem="P3o-ix-tiz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="4qy-d1-ZY2"/>
+                <constraint firstAttribute="trailing" secondItem="vB6-7f-5gH" secondAttribute="trailing" id="6IE-4u-9Db"/>
+                <constraint firstItem="vB6-7f-5gH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CPd-fz-2Nd"/>
+                <constraint firstItem="g8R-Mg-yFj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DRB-gp-QuX"/>
+                <constraint firstItem="g8R-Mg-yFj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GU2-Bu-sNa"/>
+                <constraint firstAttribute="bottom" secondItem="vB6-7f-5gH" secondAttribute="bottom" id="I6r-S7-KCV"/>
+                <constraint firstAttribute="bottom" secondItem="P3o-ix-tiz" secondAttribute="bottom" constant="10" id="Pl3-2T-AYx"/>
+                <constraint firstAttribute="trailing" secondItem="QbG-fk-rL8" secondAttribute="trailing" constant="10" id="VwP-li-wsF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="vB6-7f-5gH" id="tqZ-w4-j5d"/>
+                <outlet property="playButton" destination="g8R-Mg-yFj" id="BUu-ek-m60"/>
+                <outlet property="playCountLabel" destination="P3o-ix-tiz" id="eL1-9n-Qws"/>
+                <outlet property="videoTimeLabel" destination="QbG-fk-rL8" id="tZg-gL-3jW"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="-156"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>

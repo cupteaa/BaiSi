@@ -10,6 +10,8 @@
 #import "YRHTopic.h"
 #import <UIImageView+WebCache.h>
 #import "YRHPictureView.h"
+#import "YRHVoiceView.h"
+#import "YRHVideoView.h"
 
 @interface YRHTopicCell ()
 
@@ -23,6 +25,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *text_label;
 /** picture view */
 @property (nonatomic,weak) YRHPictureView *pictureView;
+/** voice view */
+@property (nonatomic,weak) YRHVoiceView *voiceView;
+/** video view */
+@property (nonatomic,weak) YRHVideoView *videoView;
 
 
 @end
@@ -37,6 +43,26 @@
         _pictureView = picture;
     }
     return _pictureView;
+}
+
+- (YRHVoiceView *)voiceView
+{
+    if (!_voiceView) {
+        YRHVoiceView *view = [YRHVoiceView voiceView];
+        [self.contentView addSubview:view];
+        _voiceView = view;
+    }
+    return _voiceView;
+}
+
+- (YRHVideoView *)videoView
+{
+    if (!_videoView) {
+        YRHVideoView *videoView = [YRHVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
 }
 
 - (void)awakeFromNib
@@ -62,9 +88,27 @@
     [self setupButtonTitle:self.repostCountBtn count:topic.repost placeholder:@"转发"];
     [self setupButtonTitle:self.commentCountBtn count:topic.comment placeholder:@"评论"];
     
-    if (topic.type == YRHTopicTypePicture) {
+    if (topic.type == YRHTopicTypePicture) { // 图片
+        self.pictureView.hidden = NO;
         self.pictureView.topic = topic;
         self.pictureView.frame = topic.pictureFrame;
+        
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
+    } else if (topic.type == YRHTopicTypeSound) { // 声音
+        self.voiceView.hidden = NO;
+        self.voiceView.topic = topic;
+        self.voiceView.frame = topic.voiceFrame;
+        
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+    } else if (topic.type == YRHTopicTypeVideo) { // 视频
+        self.videoView.hidden = NO;
+        self.videoView.topic = topic;
+        self.videoView.frame = topic.videoFrame;
+        
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
     }
 }
 

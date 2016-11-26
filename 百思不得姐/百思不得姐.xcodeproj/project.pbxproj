@@ -50,6 +50,10 @@
 		91BB35A51DE911C6005AD309 /* YRHShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB35A31DE911C6005AD309 /* YRHShowPictureViewController.xib */; };
 		91BB35A91DE93A16005AD309 /* YRHPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35A71DE93A16005AD309 /* YRHPublishViewController.m */; };
 		91BB35AA1DE93A16005AD309 /* YRHPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB35A81DE93A16005AD309 /* YRHPublishViewController.xib */; };
+		91BB35AD1DE94D7A005AD309 /* YRHVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35AC1DE94D7A005AD309 /* YRHVoiceView.m */; };
+		91BB35AF1DE94D85005AD309 /* YRHVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB35AE1DE94D85005AD309 /* YRHVoiceView.xib */; };
+		91BB35B21DE9551E005AD309 /* YRHVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35B11DE9551E005AD309 /* YRHVideoView.m */; };
+		91BB35B41DE95529005AD309 /* YRHVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB35B31DE95529005AD309 /* YRHVideoView.xib */; };
 		91FF6E2D1DD5C55300362E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FF6E2C1DD5C55300362E68 /* Assets.xcassets */; };
 		91FF6E301DD5C55300362E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FF6E2E1DD5C55300362E68 /* LaunchScreen.storyboard */; };
 		C5E8BF564B18EBFB7C349A36 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5441F7FAE98D1142102CA247 /* libPods-百思不得姐.a */; };
@@ -133,6 +137,12 @@
 		91BB35A61DE93A16005AD309 /* YRHPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHPublishViewController.h; sourceTree = "<group>"; };
 		91BB35A71DE93A16005AD309 /* YRHPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHPublishViewController.m; sourceTree = "<group>"; };
 		91BB35A81DE93A16005AD309 /* YRHPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHPublishViewController.xib; sourceTree = "<group>"; };
+		91BB35AB1DE94D7A005AD309 /* YRHVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHVoiceView.h; sourceTree = "<group>"; };
+		91BB35AC1DE94D7A005AD309 /* YRHVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHVoiceView.m; sourceTree = "<group>"; };
+		91BB35AE1DE94D85005AD309 /* YRHVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHVoiceView.xib; sourceTree = "<group>"; };
+		91BB35B01DE9551E005AD309 /* YRHVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHVideoView.h; sourceTree = "<group>"; };
+		91BB35B11DE9551E005AD309 /* YRHVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHVideoView.m; sourceTree = "<group>"; };
+		91BB35B31DE95529005AD309 /* YRHVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHVideoView.xib; sourceTree = "<group>"; };
 		91FF6E1D1DD5C55200362E68 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FF6E2C1DD5C55300362E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FF6E2F1DD5C55300362E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -223,6 +233,12 @@
 				91BB359C1DE83DB1005AD309 /* YRHPictureView.xib */,
 				91BB359E1DE90DA5005AD309 /* YRHProgressView.h */,
 				91BB359F1DE90DA5005AD309 /* YRHProgressView.m */,
+				91BB35AB1DE94D7A005AD309 /* YRHVoiceView.h */,
+				91BB35AC1DE94D7A005AD309 /* YRHVoiceView.m */,
+				91BB35AE1DE94D85005AD309 /* YRHVoiceView.xib */,
+				91BB35B01DE9551E005AD309 /* YRHVideoView.h */,
+				91BB35B11DE9551E005AD309 /* YRHVideoView.m */,
+				91BB35B31DE95529005AD309 /* YRHVideoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -513,11 +529,13 @@
 			files = (
 				91BB35AA1DE93A16005AD309 /* YRHPublishViewController.xib in Resources */,
 				91BB35A51DE911C6005AD309 /* YRHShowPictureViewController.xib in Resources */,
+				91BB35B41DE95529005AD309 /* YRHVideoView.xib in Resources */,
 				91425A881DD6C0AE005241B3 /* YRHRecommandCategoryCell.xib in Resources */,
 				91425A791DD6A943005241B3 /* YRHFriendTrendController.xib in Resources */,
 				91FF6E301DD5C55300362E68 /* LaunchScreen.storyboard in Resources */,
 				91425A901DD751DE005241B3 /* YRHUserViewCell.xib in Resources */,
 				91BB359D1DE83DB1005AD309 /* YRHPictureView.xib in Resources */,
+				91BB35AF1DE94D85005AD309 /* YRHVoiceView.xib in Resources */,
 				91FF6E2D1DD5C55300362E68 /* Assets.xcassets in Resources */,
 				91425A7E1DD6B0D1005241B3 /* YRHRecommandViewController.xib in Resources */,
 				914A22361DE53A23009165E6 /* YRHRegisterController.xib in Resources */,
@@ -596,6 +614,7 @@
 				914A223C1DE546C3009165E6 /* YRHTextField.m in Sources */,
 				91425A5A1DD68A62005241B3 /* YRHTabBarController.m in Sources */,
 				914A223F1DE5CBC9009165E6 /* YRHPushGuideView.m in Sources */,
+				91BB35B21DE9551E005AD309 /* YRHVideoView.m in Sources */,
 				914A22281DE5294E009165E6 /* YRHRecommandTagCell.m in Sources */,
 				91425A8B1DD747CF005241B3 /* YRHCategory.m in Sources */,
 				91425A631DD69025005241B3 /* YRHFriendTrendController.m in Sources */,
@@ -614,6 +633,7 @@
 				91425A771DD6A5F2005241B3 /* YRHNavigationController.m in Sources */,
 				91BB35A91DE93A16005AD309 /* YRHPublishViewController.m in Sources */,
 				91BB35951DE7DCD5005AD309 /* YRHConst.m in Sources */,
+				91BB35AD1DE94D7A005AD309 /* YRHVoiceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YRHVoiceView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S5A-kH-uRi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOR-vs-p8m">
+                    <rect key="frame" x="332" y="10" width="33" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="yhO-vf-if8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw5-uc-X8B">
+                    <rect key="frame" x="332" y="186" width="33" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Vmj-a6-f8o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsC-Mg-kCQ">
+                    <rect key="frame" x="156" y="77" width="63" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="GsO-QZ-MYF"/>
+                        <constraint firstAttribute="height" constant="63" id="PYp-mS-0jF"/>
+                    </constraints>
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
+                    <connections>
+                        <action selector="playVoice:" destination="iN0-l3-epB" eventType="touchUpInside" id="1n4-Oa-FNQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TOR-vs-p8m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="8GQ-kt-cem"/>
+                <constraint firstItem="bsC-Mg-kCQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NDI-fs-jVs"/>
+                <constraint firstAttribute="trailing" secondItem="zw5-uc-X8B" secondAttribute="trailing" constant="10" id="V4t-6U-b1C"/>
+                <constraint firstAttribute="bottom" secondItem="zw5-uc-X8B" secondAttribute="bottom" constant="10" id="d9J-nX-IkY"/>
+                <constraint firstItem="S5A-kH-uRi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gPX-2P-sEo"/>
+                <constraint firstAttribute="bottom" secondItem="S5A-kH-uRi" secondAttribute="bottom" id="gyh-1v-t8u"/>
+                <constraint firstAttribute="trailing" secondItem="TOR-vs-p8m" secondAttribute="trailing" constant="10" id="k3y-BB-Od5"/>
+                <constraint firstItem="bsC-Mg-kCQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="l9C-nM-iCa"/>
+                <constraint firstItem="S5A-kH-uRi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nbL-qp-teH"/>
+                <constraint firstAttribute="trailing" secondItem="S5A-kH-uRi" secondAttribute="trailing" id="sBp-vi-1Zd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="S5A-kH-uRi" id="ash-wk-6mw"/>
+                <outlet property="playButton" destination="bsC-Mg-kCQ" id="WZP-On-RVq"/>
+                <outlet property="playCountLabel" destination="TOR-vs-p8m" id="chd-o7-l8f"/>
+                <outlet property="voiceLengthLabel" destination="zw5-uc-X8B" id="4Ok-Nw-LyS"/>
+            </connections>
+            <point key="canvasLocation" x="46" y="-138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+    </resources>
+</document>
