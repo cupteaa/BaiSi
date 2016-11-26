@@ -8,6 +8,7 @@
 
 #import "YRHFriendTrendController.h"
 #import "YRHRecommandViewController.h"
+#import "YRHRegisterController.h"
 
 @interface YRHFriendTrendController ()
 
@@ -28,5 +29,29 @@
     YRHRecommandViewController *vc = [[YRHRecommandViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+- (IBAction)registBtn:(id)sender {
+    YRHRegisterController *registerVc = [[YRHRegisterController alloc] init];
+    [self.navigationController presentViewController:registerVc animated:YES completion:nil];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

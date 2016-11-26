@@ -28,6 +28,23 @@
 		91425A8F1DD751DE005241B3 /* YRHUserViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91425A8D1DD751DE005241B3 /* YRHUserViewCell.m */; };
 		91425A901DD751DE005241B3 /* YRHUserViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91425A8E1DD751DE005241B3 /* YRHUserViewCell.xib */; };
 		91425A931DD752C6005241B3 /* YRHUserCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91425A921DD752C6005241B3 /* YRHUserCategory.m */; };
+		914A22241DE52892009165E6 /* YRHRecommandTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914A22231DE52892009165E6 /* YRHRecommandTagController.m */; };
+		914A22281DE5294E009165E6 /* YRHRecommandTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 914A22261DE5294E009165E6 /* YRHRecommandTagCell.m */; };
+		914A22291DE5294E009165E6 /* YRHRecommandTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914A22271DE5294E009165E6 /* YRHRecommandTagCell.xib */; };
+		914A222C1DE52B43009165E6 /* YRHRecommandTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 914A222B1DE52B43009165E6 /* YRHRecommandTag.m */; };
+		914A22351DE53A23009165E6 /* YRHRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914A22331DE53A23009165E6 /* YRHRegisterController.m */; };
+		914A22361DE53A23009165E6 /* YRHRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914A22341DE53A23009165E6 /* YRHRegisterController.xib */; };
+		914A22391DE53C8F009165E6 /* YRHVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 914A22381DE53C8F009165E6 /* YRHVerticalButton.m */; };
+		914A223C1DE546C3009165E6 /* YRHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 914A223B1DE546C3009165E6 /* YRHTextField.m */; };
+		914A223F1DE5CBC9009165E6 /* YRHPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 914A223E1DE5CBC9009165E6 /* YRHPushGuideView.m */; };
+		914A22411DE5CBD5009165E6 /* YRHPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914A22401DE5CBD5009165E6 /* YRHPushGuideView.xib */; };
+		91BB358D1DE7D16B005AD309 /* YRHTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB358C1DE7D16B005AD309 /* YRHTopic.m */; };
+		91BB35911DE7D369005AD309 /* YRHTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB358F1DE7D369005AD309 /* YRHTopicCell.m */; };
+		91BB35921DE7D369005AD309 /* YRHTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB35901DE7D369005AD309 /* YRHTopicCell.xib */; };
+		91BB35951DE7DCD5005AD309 /* YRHConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35941DE7DCD5005AD309 /* YRHConst.m */; };
+		91BB35981DE7F07A005AD309 /* YRHTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35971DE7F07A005AD309 /* YRHTopicViewController.m */; };
+		91BB359B1DE83DA5005AD309 /* YRHPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB359A1DE83DA5005AD309 /* YRHPictureView.m */; };
+		91BB359D1DE83DB1005AD309 /* YRHPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB359C1DE83DB1005AD309 /* YRHPictureView.xib */; };
 		91FF6E2D1DD5C55300362E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FF6E2C1DD5C55300362E68 /* Assets.xcassets */; };
 		91FF6E301DD5C55300362E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FF6E2E1DD5C55300362E68 /* LaunchScreen.storyboard */; };
 		C5E8BF564B18EBFB7C349A36 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5441F7FAE98D1142102CA247 /* libPods-百思不得姐.a */; };
@@ -74,6 +91,35 @@
 		91425A8E1DD751DE005241B3 /* YRHUserViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHUserViewCell.xib; sourceTree = "<group>"; };
 		91425A911DD752C6005241B3 /* YRHUserCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHUserCategory.h; sourceTree = "<group>"; };
 		91425A921DD752C6005241B3 /* YRHUserCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHUserCategory.m; sourceTree = "<group>"; };
+		914A22221DE52892009165E6 /* YRHRecommandTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHRecommandTagController.h; sourceTree = "<group>"; };
+		914A22231DE52892009165E6 /* YRHRecommandTagController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHRecommandTagController.m; sourceTree = "<group>"; };
+		914A22251DE5294E009165E6 /* YRHRecommandTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHRecommandTagCell.h; sourceTree = "<group>"; };
+		914A22261DE5294E009165E6 /* YRHRecommandTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHRecommandTagCell.m; sourceTree = "<group>"; };
+		914A22271DE5294E009165E6 /* YRHRecommandTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHRecommandTagCell.xib; sourceTree = "<group>"; };
+		914A222A1DE52B43009165E6 /* YRHRecommandTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHRecommandTag.h; sourceTree = "<group>"; };
+		914A222B1DE52B43009165E6 /* YRHRecommandTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHRecommandTag.m; sourceTree = "<group>"; };
+		914A22321DE53A23009165E6 /* YRHRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHRegisterController.h; sourceTree = "<group>"; };
+		914A22331DE53A23009165E6 /* YRHRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHRegisterController.m; sourceTree = "<group>"; };
+		914A22341DE53A23009165E6 /* YRHRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHRegisterController.xib; sourceTree = "<group>"; };
+		914A22371DE53C8F009165E6 /* YRHVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHVerticalButton.h; sourceTree = "<group>"; };
+		914A22381DE53C8F009165E6 /* YRHVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHVerticalButton.m; sourceTree = "<group>"; };
+		914A223A1DE546C3009165E6 /* YRHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHTextField.h; sourceTree = "<group>"; };
+		914A223B1DE546C3009165E6 /* YRHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHTextField.m; sourceTree = "<group>"; };
+		914A223D1DE5CBC9009165E6 /* YRHPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHPushGuideView.h; sourceTree = "<group>"; };
+		914A223E1DE5CBC9009165E6 /* YRHPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHPushGuideView.m; sourceTree = "<group>"; };
+		914A22401DE5CBD5009165E6 /* YRHPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHPushGuideView.xib; sourceTree = "<group>"; };
+		91BB358B1DE7D16B005AD309 /* YRHTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHTopic.h; sourceTree = "<group>"; };
+		91BB358C1DE7D16B005AD309 /* YRHTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHTopic.m; sourceTree = "<group>"; };
+		91BB358E1DE7D369005AD309 /* YRHTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHTopicCell.h; sourceTree = "<group>"; };
+		91BB358F1DE7D369005AD309 /* YRHTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHTopicCell.m; sourceTree = "<group>"; };
+		91BB35901DE7D369005AD309 /* YRHTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHTopicCell.xib; sourceTree = "<group>"; };
+		91BB35931DE7DCD5005AD309 /* YRHConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHConst.h; sourceTree = "<group>"; };
+		91BB35941DE7DCD5005AD309 /* YRHConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHConst.m; sourceTree = "<group>"; };
+		91BB35961DE7F07A005AD309 /* YRHTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHTopicViewController.h; sourceTree = "<group>"; };
+		91BB35971DE7F07A005AD309 /* YRHTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHTopicViewController.m; sourceTree = "<group>"; };
+		91BB35991DE83DA5005AD309 /* YRHPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHPictureView.h; sourceTree = "<group>"; };
+		91BB359A1DE83DA5005AD309 /* YRHPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHPictureView.m; sourceTree = "<group>"; };
+		91BB359C1DE83DB1005AD309 /* YRHPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHPictureView.xib; sourceTree = "<group>"; };
 		91FF6E1D1DD5C55200362E68 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FF6E2C1DD5C55300362E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FF6E2F1DD5C55300362E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,6 +174,10 @@
 			children = (
 				91425A5B1DD68FFF005241B3 /* YRHEssenceController.h */,
 				91425A5C1DD68FFF005241B3 /* YRHEssenceController.m */,
+				914A22221DE52892009165E6 /* YRHRecommandTagController.h */,
+				914A22231DE52892009165E6 /* YRHRecommandTagController.m */,
+				91BB35961DE7F07A005AD309 /* YRHTopicViewController.h */,
+				91BB35971DE7F07A005AD309 /* YRHTopicViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,6 +185,10 @@
 		91425A411DD689A5005241B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				914A222A1DE52B43009165E6 /* YRHRecommandTag.h */,
+				914A222B1DE52B43009165E6 /* YRHRecommandTag.m */,
+				91BB358B1DE7D16B005AD309 /* YRHTopic.h */,
+				91BB358C1DE7D16B005AD309 /* YRHTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +196,15 @@
 		91425A421DD689A5005241B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				914A22251DE5294E009165E6 /* YRHRecommandTagCell.h */,
+				914A22261DE5294E009165E6 /* YRHRecommandTagCell.m */,
+				914A22271DE5294E009165E6 /* YRHRecommandTagCell.xib */,
+				91BB358E1DE7D369005AD309 /* YRHTopicCell.h */,
+				91BB358F1DE7D369005AD309 /* YRHTopicCell.m */,
+				91BB35901DE7D369005AD309 /* YRHTopicCell.xib */,
+				91BB35991DE83DA5005AD309 /* YRHPictureView.h */,
+				91BB359A1DE83DA5005AD309 /* YRHPictureView.m */,
+				91BB359C1DE83DB1005AD309 /* YRHPictureView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +228,9 @@
 				91425A7A1DD6B0D1005241B3 /* YRHRecommandViewController.h */,
 				91425A7B1DD6B0D1005241B3 /* YRHRecommandViewController.m */,
 				91425A7C1DD6B0D1005241B3 /* YRHRecommandViewController.xib */,
+				914A22321DE53A23009165E6 /* YRHRegisterController.h */,
+				914A22331DE53A23009165E6 /* YRHRegisterController.m */,
+				914A22341DE53A23009165E6 /* YRHRegisterController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +255,10 @@
 				91425A8C1DD751DE005241B3 /* YRHUserViewCell.h */,
 				91425A8D1DD751DE005241B3 /* YRHUserViewCell.m */,
 				91425A8E1DD751DE005241B3 /* YRHUserViewCell.xib */,
+				914A22371DE53C8F009165E6 /* YRHVerticalButton.h */,
+				914A22381DE53C8F009165E6 /* YRHVerticalButton.m */,
+				914A223A1DE546C3009165E6 /* YRHTextField.h */,
+				914A223B1DE546C3009165E6 /* YRHTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,12 +332,12 @@
 		91425A4F1DD689A5005241B3 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				91425A531DD689A5005241B3 /* main.m */,
-				91425A501DD689A5005241B3 /* AppDelegate.h */,
-				91425A511DD689A5005241B3 /* AppDelegate.m */,
 				91425A541DD689A5005241B3 /* Model */,
 				91425A551DD689A5005241B3 /* View */,
 				91425A521DD689A5005241B3 /* Controller */,
+				91425A531DD689A5005241B3 /* main.m */,
+				91425A501DD689A5005241B3 /* AppDelegate.h */,
+				91425A511DD689A5005241B3 /* AppDelegate.m */,
 				91425A6B1DD695B9005241B3 /* UIView+Extension.h */,
 				91425A6C1DD695B9005241B3 /* UIView+Extension.m */,
 				91425A6E1DD695E9005241B3 /* PrefixHeader.pch */,
@@ -275,6 +345,8 @@
 				91425A701DD6A0A2005241B3 /* UIBarButtonItem+YRHBarButtonItem.m */,
 				91425A721DD6A504005241B3 /* YRHtestViewController.h */,
 				91425A731DD6A504005241B3 /* YRHtestViewController.m */,
+				91BB35931DE7DCD5005AD309 /* YRHConst.h */,
+				91BB35941DE7DCD5005AD309 /* YRHConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -302,6 +374,9 @@
 			children = (
 				91425A671DD6910C005241B3 /* YRHTabBar.h */,
 				91425A681DD6910C005241B3 /* YRHTabBar.m */,
+				914A223D1DE5CBC9009165E6 /* YRHPushGuideView.h */,
+				914A223E1DE5CBC9009165E6 /* YRHPushGuideView.m */,
+				914A22401DE5CBD5009165E6 /* YRHPushGuideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -419,8 +494,13 @@
 				91425A791DD6A943005241B3 /* YRHFriendTrendController.xib in Resources */,
 				91FF6E301DD5C55300362E68 /* LaunchScreen.storyboard in Resources */,
 				91425A901DD751DE005241B3 /* YRHUserViewCell.xib in Resources */,
+				91BB359D1DE83DB1005AD309 /* YRHPictureView.xib in Resources */,
 				91FF6E2D1DD5C55300362E68 /* Assets.xcassets in Resources */,
 				91425A7E1DD6B0D1005241B3 /* YRHRecommandViewController.xib in Resources */,
+				914A22361DE53A23009165E6 /* YRHRegisterController.xib in Resources */,
+				914A22291DE5294E009165E6 /* YRHRecommandTagCell.xib in Resources */,
+				914A22411DE5CBD5009165E6 /* YRHPushGuideView.xib in Resources */,
+				91BB35921DE7D369005AD309 /* YRHTopicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,23 +559,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914A22351DE53A23009165E6 /* YRHRegisterController.m in Sources */,
+				91BB35911DE7D369005AD309 /* YRHTopicCell.m in Sources */,
 				91425A871DD6C0AE005241B3 /* YRHRecommandCategoryCell.m in Sources */,
 				91425A6D1DD695B9005241B3 /* UIView+Extension.m in Sources */,
 				91425A741DD6A504005241B3 /* YRHtestViewController.m in Sources */,
 				91425A571DD689A5005241B3 /* main.m in Sources */,
 				91425A601DD69014005241B3 /* YRHNewController.m in Sources */,
 				91425A711DD6A0A2005241B3 /* UIBarButtonItem+YRHBarButtonItem.m in Sources */,
+				91BB359B1DE83DA5005AD309 /* YRHPictureView.m in Sources */,
+				91BB358D1DE7D16B005AD309 /* YRHTopic.m in Sources */,
+				914A223C1DE546C3009165E6 /* YRHTextField.m in Sources */,
 				91425A5A1DD68A62005241B3 /* YRHTabBarController.m in Sources */,
+				914A223F1DE5CBC9009165E6 /* YRHPushGuideView.m in Sources */,
+				914A22281DE5294E009165E6 /* YRHRecommandTagCell.m in Sources */,
 				91425A8B1DD747CF005241B3 /* YRHCategory.m in Sources */,
 				91425A631DD69025005241B3 /* YRHFriendTrendController.m in Sources */,
 				91425A8F1DD751DE005241B3 /* YRHUserViewCell.m in Sources */,
 				91425A5D1DD68FFF005241B3 /* YRHEssenceController.m in Sources */,
+				914A22241DE52892009165E6 /* YRHRecommandTagController.m in Sources */,
 				91425A691DD6910C005241B3 /* YRHTabBar.m in Sources */,
+				914A22391DE53C8F009165E6 /* YRHVerticalButton.m in Sources */,
+				91BB35981DE7F07A005AD309 /* YRHTopicViewController.m in Sources */,
 				91425A661DD69035005241B3 /* YRHMeController.m in Sources */,
 				91425A561DD689A5005241B3 /* AppDelegate.m in Sources */,
 				91425A931DD752C6005241B3 /* YRHUserCategory.m in Sources */,
+				914A222C1DE52B43009165E6 /* YRHRecommandTag.m in Sources */,
 				91425A7D1DD6B0D1005241B3 /* YRHRecommandViewController.m in Sources */,
 				91425A771DD6A5F2005241B3 /* YRHNavigationController.m in Sources */,
+				91BB35951DE7DCD5005AD309 /* YRHConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

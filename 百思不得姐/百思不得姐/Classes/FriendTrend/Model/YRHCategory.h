@@ -16,5 +16,12 @@
 @property (nonatomic,assign) NSInteger count;
 /** name */
 @property (nonatomic,copy) NSString *name;
+/** users */
+@property (nonatomic,strong) NSMutableArray *users;
+/** user总数 */
+@property (nonatomic,assign) NSInteger total;
+/** current page */
+@property (nonatomic,assign) NSInteger currentPage;
+
 
 @end

@@ -42,16 +42,16 @@
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-    
+    // 精华
     UIViewController *vc1 = [[YRHEssenceController alloc] init];
     [self setTabBarItemWithTabBarController:vc1 Title:@"精华" image:[UIImage imageNamed:@"tabBar_essence_icon"] selectedImage:[UIImage imageNamed:@"tabBar_essence_click_icon"]];
-    
+    // 新帖
     UIViewController *vc2 = [[YRHNewController alloc] init];
     [self setTabBarItemWithTabBarController:vc2 Title:@"新帖" image:[UIImage imageNamed:@"tabBar_new_icon"] selectedImage:[UIImage imageNamed:@"tabBar_new_click_icon"]];
-    
+    // 关注
     UIViewController *vc3 = [[YRHFriendTrendController alloc] init];
     [self setTabBarItemWithTabBarController:vc3 Title:@"关注" image:[UIImage imageNamed:@"tabBar_new_icon"] selectedImage:[UIImage imageNamed:@"tabBar_new_click_icon"]];
-    
+    // 我
     UIViewController *vc4 = [[YRHMeController alloc] init];
     [self setTabBarItemWithTabBarController:vc4 Title:@"我" image:[UIImage imageNamed:@"tabBar_me_icon"] selectedImage:[UIImage imageNamed:@"tabBar_me_click_icon"]];
     

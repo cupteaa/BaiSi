@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YRHTabBarController.h"
+#import "YRHPushGuideView.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,8 @@
     
     [self.window makeKeyAndVisible];
     
+    // 显示引导页
+    [YRHPushGuideView show];
     return YES;
 }
 
