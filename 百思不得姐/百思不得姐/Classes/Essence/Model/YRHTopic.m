@@ -7,6 +7,7 @@
 //
 
 #import "YRHTopic.h"
+#import <MJExtension/MJExtension.h>
 
 @implementation YRHTopic
 {
@@ -15,11 +16,18 @@
     CGRect _voiceFrame;
 }
 
++ (NSDictionary *)mj_replacedKeyFromPropertyName
+{
+    return @{
+             @"ID" : @"id"
+             };
+}
+
 - (CGFloat)cellHeight
 {
     if (!_cellHeight) {
-        CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4 * YRHTopicCellMargin, MAXFLOAT);
-        CGFloat textH = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:12.0]} context:nil].size.height;
+        CGSize maxSize = CGSizeMake(YRHScreenW - 4 * YRHTopicCellMargin, MAXFLOAT);
+        CGFloat textH = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14.0]} context:nil].size.height;
         _cellHeight = YRHTopicTextY + textH + 2 * YRHTopicCellMargin + YRHTopicBottomBarH;
         if (self.type == YRHTopicTypePicture) { // 图片帖子
             // 计算图片的高度

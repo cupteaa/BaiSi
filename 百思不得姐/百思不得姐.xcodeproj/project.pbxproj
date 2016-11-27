@@ -54,6 +54,13 @@
 		91BB35AF1DE94D85005AD309 /* YRHVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB35AE1DE94D85005AD309 /* YRHVoiceView.xib */; };
 		91BB35B21DE9551E005AD309 /* YRHVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35B11DE9551E005AD309 /* YRHVideoView.m */; };
 		91BB35B41DE95529005AD309 /* YRHVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB35B31DE95529005AD309 /* YRHVideoView.xib */; };
+		91BB35B71DE98A4F005AD309 /* YRHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35B61DE98A4F005AD309 /* YRHUser.m */; };
+		91BB35BA1DE98A5B005AD309 /* YRHComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35B91DE98A5B005AD309 /* YRHComment.m */; };
+		91BB35BE1DE98F26005AD309 /* YRHCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35BC1DE98F26005AD309 /* YRHCommentViewController.m */; };
+		91BB35BF1DE98F26005AD309 /* YRHCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB35BD1DE98F26005AD309 /* YRHCommentViewController.xib */; };
+		91BB35C21DEA6B2A005AD309 /* YRHHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35C11DEA6B2A005AD309 /* YRHHeaderView.m */; };
+		91BB35C61DEA7082005AD309 /* YRHCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB35C41DEA7082005AD309 /* YRHCommentCell.m */; };
+		91BB35C71DEA7082005AD309 /* YRHCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91BB35C51DEA7082005AD309 /* YRHCommentCell.xib */; };
 		91FF6E2D1DD5C55300362E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FF6E2C1DD5C55300362E68 /* Assets.xcassets */; };
 		91FF6E301DD5C55300362E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FF6E2E1DD5C55300362E68 /* LaunchScreen.storyboard */; };
 		C5E8BF564B18EBFB7C349A36 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5441F7FAE98D1142102CA247 /* libPods-百思不得姐.a */; };
@@ -143,6 +150,18 @@
 		91BB35B01DE9551E005AD309 /* YRHVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHVideoView.h; sourceTree = "<group>"; };
 		91BB35B11DE9551E005AD309 /* YRHVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHVideoView.m; sourceTree = "<group>"; };
 		91BB35B31DE95529005AD309 /* YRHVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHVideoView.xib; sourceTree = "<group>"; };
+		91BB35B51DE98A4F005AD309 /* YRHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHUser.h; sourceTree = "<group>"; };
+		91BB35B61DE98A4F005AD309 /* YRHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHUser.m; sourceTree = "<group>"; };
+		91BB35B81DE98A5B005AD309 /* YRHComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHComment.h; sourceTree = "<group>"; };
+		91BB35B91DE98A5B005AD309 /* YRHComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHComment.m; sourceTree = "<group>"; };
+		91BB35BB1DE98F26005AD309 /* YRHCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHCommentViewController.h; sourceTree = "<group>"; };
+		91BB35BC1DE98F26005AD309 /* YRHCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHCommentViewController.m; sourceTree = "<group>"; };
+		91BB35BD1DE98F26005AD309 /* YRHCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHCommentViewController.xib; sourceTree = "<group>"; };
+		91BB35C01DEA6B2A005AD309 /* YRHHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHHeaderView.h; sourceTree = "<group>"; };
+		91BB35C11DEA6B2A005AD309 /* YRHHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHHeaderView.m; sourceTree = "<group>"; };
+		91BB35C31DEA7082005AD309 /* YRHCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHCommentCell.h; sourceTree = "<group>"; };
+		91BB35C41DEA7082005AD309 /* YRHCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHCommentCell.m; sourceTree = "<group>"; };
+		91BB35C51DEA7082005AD309 /* YRHCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YRHCommentCell.xib; sourceTree = "<group>"; };
 		91FF6E1D1DD5C55200362E68 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FF6E2C1DD5C55300362E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FF6E2F1DD5C55300362E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -204,6 +223,9 @@
 				91BB35A11DE911C6005AD309 /* YRHShowPictureViewController.h */,
 				91BB35A21DE911C6005AD309 /* YRHShowPictureViewController.m */,
 				91BB35A31DE911C6005AD309 /* YRHShowPictureViewController.xib */,
+				91BB35BB1DE98F26005AD309 /* YRHCommentViewController.h */,
+				91BB35BC1DE98F26005AD309 /* YRHCommentViewController.m */,
+				91BB35BD1DE98F26005AD309 /* YRHCommentViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +237,10 @@
 				914A222B1DE52B43009165E6 /* YRHRecommandTag.m */,
 				91BB358B1DE7D16B005AD309 /* YRHTopic.h */,
 				91BB358C1DE7D16B005AD309 /* YRHTopic.m */,
+				91BB35B51DE98A4F005AD309 /* YRHUser.h */,
+				91BB35B61DE98A4F005AD309 /* YRHUser.m */,
+				91BB35B81DE98A5B005AD309 /* YRHComment.h */,
+				91BB35B91DE98A5B005AD309 /* YRHComment.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +265,11 @@
 				91BB35B01DE9551E005AD309 /* YRHVideoView.h */,
 				91BB35B11DE9551E005AD309 /* YRHVideoView.m */,
 				91BB35B31DE95529005AD309 /* YRHVideoView.xib */,
+				91BB35C01DEA6B2A005AD309 /* YRHHeaderView.h */,
+				91BB35C11DEA6B2A005AD309 /* YRHHeaderView.m */,
+				91BB35C31DEA7082005AD309 /* YRHCommentCell.h */,
+				91BB35C41DEA7082005AD309 /* YRHCommentCell.m */,
+				91BB35C51DEA7082005AD309 /* YRHCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -529,11 +560,13 @@
 			files = (
 				91BB35AA1DE93A16005AD309 /* YRHPublishViewController.xib in Resources */,
 				91BB35A51DE911C6005AD309 /* YRHShowPictureViewController.xib in Resources */,
+				91BB35BF1DE98F26005AD309 /* YRHCommentViewController.xib in Resources */,
 				91BB35B41DE95529005AD309 /* YRHVideoView.xib in Resources */,
 				91425A881DD6C0AE005241B3 /* YRHRecommandCategoryCell.xib in Resources */,
 				91425A791DD6A943005241B3 /* YRHFriendTrendController.xib in Resources */,
 				91FF6E301DD5C55300362E68 /* LaunchScreen.storyboard in Resources */,
 				91425A901DD751DE005241B3 /* YRHUserViewCell.xib in Resources */,
+				91BB35C71DEA7082005AD309 /* YRHCommentCell.xib in Resources */,
 				91BB359D1DE83DB1005AD309 /* YRHPictureView.xib in Resources */,
 				91BB35AF1DE94D85005AD309 /* YRHVoiceView.xib in Resources */,
 				91FF6E2D1DD5C55300362E68 /* Assets.xcassets in Resources */,
@@ -611,6 +644,7 @@
 				91425A711DD6A0A2005241B3 /* UIBarButtonItem+YRHBarButtonItem.m in Sources */,
 				91BB359B1DE83DA5005AD309 /* YRHPictureView.m in Sources */,
 				91BB358D1DE7D16B005AD309 /* YRHTopic.m in Sources */,
+				91BB35B71DE98A4F005AD309 /* YRHUser.m in Sources */,
 				914A223C1DE546C3009165E6 /* YRHTextField.m in Sources */,
 				91425A5A1DD68A62005241B3 /* YRHTabBarController.m in Sources */,
 				914A223F1DE5CBC9009165E6 /* YRHPushGuideView.m in Sources */,
@@ -621,17 +655,21 @@
 				91425A8F1DD751DE005241B3 /* YRHUserViewCell.m in Sources */,
 				91425A5D1DD68FFF005241B3 /* YRHEssenceController.m in Sources */,
 				914A22241DE52892009165E6 /* YRHRecommandTagController.m in Sources */,
+				91BB35BE1DE98F26005AD309 /* YRHCommentViewController.m in Sources */,
 				91425A691DD6910C005241B3 /* YRHTabBar.m in Sources */,
 				914A22391DE53C8F009165E6 /* YRHVerticalButton.m in Sources */,
 				91BB35A01DE90DA5005AD309 /* YRHProgressView.m in Sources */,
+				91BB35BA1DE98A5B005AD309 /* YRHComment.m in Sources */,
 				91BB35981DE7F07A005AD309 /* YRHTopicViewController.m in Sources */,
 				91425A661DD69035005241B3 /* YRHMeController.m in Sources */,
+				91BB35C61DEA7082005AD309 /* YRHCommentCell.m in Sources */,
 				91425A561DD689A5005241B3 /* AppDelegate.m in Sources */,
 				91425A931DD752C6005241B3 /* YRHUserCategory.m in Sources */,
 				914A222C1DE52B43009165E6 /* YRHRecommandTag.m in Sources */,
 				91425A7D1DD6B0D1005241B3 /* YRHRecommandViewController.m in Sources */,
 				91425A771DD6A5F2005241B3 /* YRHNavigationController.m in Sources */,
 				91BB35A91DE93A16005AD309 /* YRHPublishViewController.m in Sources */,
+				91BB35C21DEA6B2A005AD309 /* YRHHeaderView.m in Sources */,
 				91BB35951DE7DCD5005AD309 /* YRHConst.m in Sources */,
 				91BB35AD1DE94D7A005AD309 /* YRHVoiceView.m in Sources */,
 			);

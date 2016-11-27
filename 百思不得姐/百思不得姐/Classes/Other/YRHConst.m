@@ -10,7 +10,7 @@
 
 CGFloat const YRHTitlesViewH = 35;
 CGFloat const YRHTitlesViewY = 64;
-
+CGFloat const YRHNavgationBarH = 44;
 // 精华 间隔
 CGFloat const YRHTopicCellMargin = 10;
 // 精华 底部按钮高度
@@ -21,6 +21,8 @@ CGFloat const YRHTopicTextY = 55;
 CGFloat const YRHTopicCellPictureMaxH = 1000;
 // 大图显示的高度
 CGFloat const YRHTopicCellPictureBreakH = 250;
+
+NSString * const YRHTabBarDidSelectedNotificationName = @"YRHTabBarDidSelectedNotificationName";
 
 
 

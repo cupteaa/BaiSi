@@ -75,6 +75,9 @@
     
 }
 
+- (IBAction)btnClick:(id)sender {
+    [self showPicture];
+}
 
 
 

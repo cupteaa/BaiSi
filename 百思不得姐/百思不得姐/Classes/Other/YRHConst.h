@@ -18,6 +18,7 @@ typedef enum {
 
 extern CGFloat const YRHTitlesViewH;
 extern CGFloat const YRHTitlesViewY;
+extern CGFloat const YRHNavgationBarH;
 
 // 精华 间隔
 extern CGFloat const YRHTopicCellMargin;
@@ -29,3 +30,6 @@ extern CGFloat const YRHTopicTextY;
 extern CGFloat const YRHTopicCellPictureMaxH;
 // 大图显示的高度
 extern CGFloat const YRHTopicCellPictureBreakH;
+
+// tabbar被选中的通知的名字
+extern NSString * const YRHTabBarDidSelectedNotificationName;

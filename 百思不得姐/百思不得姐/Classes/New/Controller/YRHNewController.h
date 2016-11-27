@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YRHEssenceController.h"
 
-@interface YRHNewController : UIViewController
+@interface YRHNewController : YRHEssenceController
 
 @end

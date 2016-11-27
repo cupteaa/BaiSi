@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface YRHTopic : NSObject
+/** id */
+@property (nonatomic,copy) NSString *ID;
 /** 正文 */
 @property (nonatomic,copy) NSString *text;
 /** name */

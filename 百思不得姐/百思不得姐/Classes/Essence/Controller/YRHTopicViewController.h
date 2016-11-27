@@ -11,4 +11,8 @@
 @interface YRHTopicViewController : UITableViewController
 /** 帖子的类型 */
 @property (nonatomic,assign) YRHTopicType type;
+
+/** 刷新数据 */
+@property (nonatomic,copy) void(^reloadData)();
+
 @end

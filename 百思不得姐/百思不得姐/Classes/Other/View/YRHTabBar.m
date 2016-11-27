@@ -42,6 +42,8 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    // 标记按钮是否添加过监听器
+    static BOOL added = NO;
     // 设置发布按钮的尺寸
     self.publishBtn.bounds = CGRectMake(0, 0, self.publishBtn.currentBackgroundImage.size.width, self.publishBtn.currentBackgroundImage.size.height);
     self.publishBtn.center = CGPointMake(self.width * 0.5, self.height * 0.5);
@@ -50,18 +52,26 @@
     CGFloat itemW = self.bounds.size.width / 5;
     CGFloat itemH = self.bounds.size.height;
     NSInteger index = 0;
-    for (UIView *btn in self.subviews) {
+    for (UIControl *btn in self.subviews) {
         if (![btn isKindOfClass:[UIControl class]] || btn == self.publishBtn) {
             continue;
+        }
+        if (added == NO) {
+            [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
         }
         // 计算x值
         CGFloat x = itemW * ((index > 1) ? (index + 1) : index);
         btn.frame = CGRectMake(x, y, itemW, itemH);
         index++;
     }
+    added = YES;
 }
 
-
+- (void)click
+{
+    // 发出tabbar被点击的通知
+    [[NSNotificationCenter defaultCenter] postNotificationName:YRHTabBarDidSelectedNotificationName object:nil userInfo:nil];
+}
 
 
 

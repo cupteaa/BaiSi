@@ -16,8 +16,12 @@
 #import "YRHTabBar.h"
 
 #import "YRHNavigationController.h"
+#import "YRHTopicViewController.h"
 
 @interface YRHTabBarController ()
+
+/** vc */
+@property (nonatomic,weak) UIViewController *vc;
 
 @end
 
@@ -70,7 +74,6 @@
     YRHNavigationController *nav = [[YRHNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
-
 
 
 

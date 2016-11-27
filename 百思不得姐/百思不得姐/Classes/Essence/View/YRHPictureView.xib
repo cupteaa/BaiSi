@@ -34,6 +34,9 @@
                     <state key="normal" title="点击查看大图" image="see-big-picture" backgroundImage="see-big-picture-background">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="s4q-cZ-Z9z"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOf-kW-HrQ" customClass="YRHProgressView">
                     <rect key="frame" x="162.5" y="74.5" width="50" height="50"/>

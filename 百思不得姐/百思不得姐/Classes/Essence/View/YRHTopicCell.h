@@ -10,6 +10,7 @@
 
 @class YRHTopic;
 @interface YRHTopicCell : UITableViewCell
++ (instancetype)cell;
 /** topic */
 @property (nonatomic,strong) YRHTopic *topic;
 @end

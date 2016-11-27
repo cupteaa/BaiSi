@@ -65,6 +65,11 @@
     return _videoView;
 }
 
++ (instancetype)cell
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:self options:nil] lastObject];
+}
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
@@ -87,7 +92,9 @@
     [self setupButtonTitle:self.hateCountBtn count:topic.hate placeholder:@"踩"];
     [self setupButtonTitle:self.repostCountBtn count:topic.repost placeholder:@"转发"];
     [self setupButtonTitle:self.commentCountBtn count:topic.comment placeholder:@"评论"];
-    
+    self.pictureView.hidden = YES;
+    self.voiceView.hidden = YES;
+    self.videoView.hidden = YES;
     if (topic.type == YRHTopicTypePicture) { // 图片
         self.pictureView.hidden = NO;
         self.pictureView.topic = topic;

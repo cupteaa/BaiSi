@@ -10,6 +10,8 @@
 #import "YRHTopic.h"
 #import "YRHTopicCell.h"
 #import "YRHPictureView.h"
+#import "YRHCommentViewController.h"
+#import "YRHNewController.h"
 
 #import <MJRefresh/MJRefresh.h>
 #import <MJExtension/MJExtension.h>
@@ -26,6 +28,8 @@
 @property (nonatomic,assign) NSInteger page;
 /** 上一次的请求参数 */
 @property (nonatomic,strong) NSDictionary *parameters;
+/** 上一次选中的索引 */
+@property (nonatomic,assign) NSInteger lastSelectIndex;
 
 @end
 
@@ -44,6 +48,10 @@
     [super viewDidLoad];
     [self setupTableView];
     [self setupRefresh];
+    __weak YRHTopicViewController *weakSelf = self;
+    self.reloadData = ^{
+        [weakSelf setupRefresh];
+    };
 }
 static NSString * const topicID = @"topicCell";
 - (void)setupTableView
@@ -56,7 +64,20 @@ static NSString * const topicID = @"topicCell";
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     // 注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([YRHTopicCell class]) bundle:nil] forCellReuseIdentifier:topicID];
+    // 监听tabbar按钮点击的通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarSelect) name:YRHTabBarDidSelectedNotificationName object:nil];
 }
+#pragma mark - 接收到通知后执行刷新
+- (void)tabBarSelect
+{
+    // 两次点击 刷新显示在界面上的view
+    if (self.lastSelectIndex == self.tabBarController.selectedIndex && self.view.isShowingOnKeyWindow) {
+        YRHLogFunc;
+        [self.tableView.mj_header beginRefreshing];
+    }
+    self.lastSelectIndex = self.tabBarController.selectedIndex;
+}
+
 
 // 刷新
 - (void)setupRefresh
@@ -65,12 +86,18 @@ static NSString * const topicID = @"topicCell";
     [self.tableView.mj_header beginRefreshing];
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
 }
+// 判断是新帖还是精华
+- (NSString *)essenceOrNew
+{
+    return [self.parentViewController isKindOfClass:[YRHNewController class]] ? @"newlist" : @"list";
+}
+
 - (void)loadNewTopics
 {
     [self.tableView.mj_footer endRefreshing];
     // 请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = [self essenceOrNew];
     parameters[@"c"] = @"data";
     parameters[@"type"] = @(self.type);
     self.parameters = parameters;
@@ -98,7 +125,7 @@ static NSString * const topicID = @"topicCell";
     [self.tableView.mj_header endRefreshing];
     self.page++;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = [self essenceOrNew];
     parameters[@"c"] = @"data";
     parameters[@"type"] = @(self.type);
     parameters[@"maxtime"] = self.maxtime;
@@ -147,6 +174,9 @@ static NSString * const topicID = @"topicCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    YRHCommentViewController *vc = [[YRHCommentViewController alloc] init];
+    vc.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
     // 取消cell选中样式
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
